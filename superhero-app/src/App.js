@@ -1,25 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Potato from './Potato';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          hello
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function Hello() {
+  return ( // 컴포넌트는 html을 반환하는 함수이다
+    <div>
+      <h1>hello hero</h1>
+      <Potato/>
     </div>
   );
 }
 
-export default App;
+export default Hello;
