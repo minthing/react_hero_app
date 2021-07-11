@@ -9,6 +9,8 @@ function Hello({world}){
   )
 }
 
+const foodList = ['cake', 'sushi', 'bulgogi']
+
 function App() {
   return ( // 컴포넌트는 html을 반환하는 함수이다
     <div>
