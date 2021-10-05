@@ -54,3 +54,26 @@ function App() {
 export default App;
 
 ```
+
+##### 211005 (화)
+
+* 동적 데이터 추가하는 방법
+
+```javascript
+const heroList = [{
+  name:"superman",
+  img:"https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png"
+},
+{
+  name:"batman",
+  img:"https://upload.wikimedia.org/wikipedia/en/c/c7/Batman_Infobox.jpg"
+}]
+
+function App() {
+  return ( // 컴포넌트는 html을 반환하는 함수이다
+    <div>
+      {heroList.map(hero => {return <Heros name={hero.name} />})}
+    </div>
+  );
+}
+```
