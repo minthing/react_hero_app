@@ -77,3 +77,6 @@ function App() {
   );
 }
 ```
+
+### 211013(수)
+* `npm i prop-types` : 보낸 prop이 유효한지 확인
