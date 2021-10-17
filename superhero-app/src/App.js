@@ -13,10 +13,16 @@ class App extends React.Component{
   }
 
   add = () => {
-    console.log("add")
+    this.setState(current => ({
+      // 아래와 같은 방식은 state에 너무 의존하게 만들어 별로 좋은 코드는 아님.
+      //count:this.state.count +1
+      count : current.count + 1
+    }))
   }
   minus = () => {
-    console.log("minus")
+    this.setState(current => ({
+      count : current.count - 1
+    }))
   }
   render(h) {
     // vue의 data 같은데...

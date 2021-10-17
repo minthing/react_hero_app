@@ -80,3 +80,7 @@ function App() {
 
 ### 211013(수)
 * `npm i prop-types` : 보낸 prop이 유효한지 확인
+
+### 211017(일)
+* ` this.state.count` 와 같은 식으로 mutate 해선 안됨
+* `setState`를 실행할 때마다 react는 render 함수를 재실행함 참고자료 : https://ko.reactjs.org/docs/faq-state.html
