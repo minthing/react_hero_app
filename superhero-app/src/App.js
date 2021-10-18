@@ -8,6 +8,12 @@ class App extends React.Component{
   // class는 state를 가지고 있다 -> object임
   // https://reactjs.org/docs/react-component.html
 
+  constructor(props){
+    // render 보다 이게 먼저 실행
+    super(props);
+    console.log("hello")
+  }
+
   state = {
     count : 0
   }
@@ -24,7 +30,24 @@ class App extends React.Component{
       count : current.count - 1
     }))
   }
+
+  componentDidUpdate(){
+    console.log("something changed")
+  }
+
+  componentDidMount(){
+    // after rendered
+    console.log("component rendered")
+  }
+
+  componentWillUnmount(){
+    // component goes away
+    console.log("goodbye");
+  }
+
   render(h) {
+    // render -> setSate가 실행되면 같이 실행됨
+    console.log("world")
     // vue의 data 같은데...
     // this.add() : 즉시실행
     return <div>

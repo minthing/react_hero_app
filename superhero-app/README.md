@@ -84,3 +84,8 @@ function App() {
 ### 211017(일)
 * ` this.state.count` 와 같은 식으로 mutate 해선 안됨
 * `setState`를 실행할 때마다 react는 render 함수를 재실행함 참고자료 : https://ko.reactjs.org/docs/faq-state.html
+
+### 211018(월)
+* mounting : 컴포넌트 생성
+* update : 업데이트
+* unmounting : 컴포넌트 죽을 때
